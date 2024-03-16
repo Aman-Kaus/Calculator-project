@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Calculator CSS -->
+  <link rel="stylesheet" type="text/css" href="Calc.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="calculator">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <input type="text" class="form-control mb-3" id="result" readonly>
+          <div class="btn-group btn-group-lg w-100" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('7')">7</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('8')">8</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('9')">9</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('+')">+</button>
+            <button type="button" class="btn btn-secondary" onclick="clearResult()">C</button>
+          </div>
+          <div class="btn-group btn-group-lg w-100" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('4')">4</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('5')">5</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('6')">6</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('-')">-</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('%')">%</button>
+          </div>
+          <div class="btn-group btn-group-lg w-100" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('1')">1</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('2')">2</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('3')">3</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('*')">*</button>
+            <button type="button" class="btn btn-secondary" onclick="square()">x²</button>
+          </div>
+          <div class="btn-group btn-group-lg w-100" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('0')">0</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('.')">.</button>
+            <button type="button" class="btn btn-secondary" onclick="appendToResult('/')">/</button>
+            <button type="button" class="btn btn-secondary" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Calc.js"></script>
+</body>
+</html>
